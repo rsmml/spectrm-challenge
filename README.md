@@ -29,8 +29,11 @@ Things you may want to cover:
 
   rails new spectrm-challenge --database postgresql --api
 
-- Instalation GEM 'activeuuid' + bundle install
+- UUID
 
-  gem 'activeuuid'
+  I utilice the class method SecureRandom incorporated in Rails.
+  Create migration that enables enable_extension 'pgcrypto'
+  Change id column from the table Message to the value of an UUID
+  Add a before_create method on Message Class that will apply a uuid string as the id of the class.
 
 -
