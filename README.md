@@ -22,3 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# APP PROCESS:
+
+- Create of a new rails app, api only, with postgreSQL for DB.
+
+  rails new spectrm-challenge --database postgresql --api
+
+- Instalation GEM 'activeuuid' + bundle install
+
+  gem 'activeuuid'
+
+-
