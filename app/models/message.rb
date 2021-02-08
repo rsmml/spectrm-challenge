@@ -1,9 +1,12 @@
 class Message < ApplicationRecord
-  require "securerandom"
+  require 'securerandom'
   before_create :randomize_id
 
-  validates_format_of :body, :with => /\A[\A\-]*/, on: :create
-  validates_length_of :body, :maximum => 255
+  EMAIL_REGEX = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/
+  LINK_REGEX  = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/
+  validates :body, format: { with: /\A[\A\-]*/ }, presence: true
+  validates :body, format: { without: /<.+?>/, message: "No HTML <tags />" }
+  validates :body, length: { maximum: 255 }
 
   private
 
