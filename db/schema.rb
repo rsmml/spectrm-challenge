@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2021_02_08_142717) do
     t.text "body"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "counter"
+    t.integer "counter", unsigned: true
   end
 
 end

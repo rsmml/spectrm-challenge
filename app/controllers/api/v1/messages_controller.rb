@@ -9,8 +9,9 @@ class Api::V1::MessagesController < ApplicationController
 
   def show
     if @message
-      message.counter += 1
-      render json: { message: message }
+      @message.counter += 1
+      @message.save
+      render json: { message: @message }
     else
       render json: { message: 404 }
     end
