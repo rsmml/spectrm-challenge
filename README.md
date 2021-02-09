@@ -68,15 +68,15 @@ Things you may want to cover:
 
   > POST http://localhost:3000/api/v1/messages/?:key=:value
 
-  ':key   = body'
-  ':value = .text'
+  'key   = body'
+  'value = .text'
 
   - **Update** a Message instance:
 
   > PATCH http://localhost:3000/api/v1/messages/:identifier?:key=:value
 
-  ':key   = body'
-  ':value = .text'
+  'key   = body'
+  'value = .text'
 
   - **Delete** a Message instance:
 
