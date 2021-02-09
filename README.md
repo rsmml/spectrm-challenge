@@ -8,7 +8,7 @@
 - [Test]()
 
 # About App:
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
+[↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
 * Ruby version
 
@@ -34,10 +34,10 @@
   ```
 
 # Install App Locally
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
+[↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
 # APP PROCESS:
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
+[↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
 - Create of a new rails app, api only, with postgreSQL for DB.
 
@@ -68,7 +68,7 @@
 
 
 # ENDPOINTS:
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
+[↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
   ### Testing in POSTMAN:
 
@@ -136,7 +136,7 @@
   This is the id or identifier of the Message instance.
 
 # Docker
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
+[↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
 # Testing App
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
+[↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
