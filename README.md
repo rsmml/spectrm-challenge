@@ -70,7 +70,7 @@
   This is a **public workspace** dedicated for this API.
 
 
-  - **List** all messages:
+  - ### **List** all messages:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
