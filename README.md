@@ -8,7 +8,7 @@
 - [Test]()
 
 # About App:
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md)
+[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
 * Ruby version
 
@@ -27,10 +27,10 @@
 * Services (job queues, cache servers, search engines, etc.)
 
 # Install App Locally
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md)
+[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
 # APP PROCESS:
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md)
+[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
 - Create of a new rails app, api only, with postgreSQL for DB.
 
@@ -61,7 +61,7 @@
 
 
 # ENDPOINTS:
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md)
+[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
   ### Testing in POSTMAN:
 
@@ -92,7 +92,7 @@
   > DELETE http://localhost:3000/api/v1/messages/:identifier
 
 # Docker
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md)
+[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
 # Testing App
-[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md)
+[↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
