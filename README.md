@@ -61,14 +61,15 @@ This project is built in
 
   If you are running another version of Ruby, we can easily change it with **rbenv**
 
-  **rbenv instalation**
+  **rbenv Instalation:**
 
   on the command line run:
+
+  (Install **[BREW](https://brew.sh/)**, if you don't have it.)
 
   ```ruby
   brew install rbenv
   ```
-  - Install **[BREW](https://brew.sh/)**, if you don't have it.
 
   to check if it worked run:
 
@@ -76,7 +77,7 @@ This project is built in
   rbenv --version
   ```
 
-  ** Install Ruby **
+  **Install Ruby**
 
   Once rbenv is installed we have to install the Ruby version to be able to run
   this app localy. Run on the terminal:
@@ -142,13 +143,15 @@ load schema.rb, and seed the data by running seeds.rb.
   rails db:setup
 ```
 
-Run `bundle e rails db:migrate` in case there are pending migrations. But I believe
+Run ```bundle install``` & ```rails db:migrate``` in case there are pending migrations. But I believe
 it won't be necesary.
 
 
 You don't have PostgreSQL, no problem:
 
-  `brew install postgresql`
+```ruby
+brew install postgresql
+```
 
 You can always check before with **postgres -V** if it is installed or not.
 Then run:
@@ -166,14 +169,14 @@ It shold be running in ```localhost:3000``` to be able to fetch and send data
 from Postman. Run
 
 ```ruby
-rails s -p 3000
+rails s --p 3000
 ```
 in case the default port is not 3000.
 
 # APP PROCESS:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
-- Create of a new rails app, api only, with postgreSQL for DB.
+- Create of a new rails app, API only, with postgreSQL for DB.
 
   ```ruby
   rails new spectrm-challenge --database postgresql --api
