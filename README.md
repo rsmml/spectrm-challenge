@@ -12,19 +12,26 @@
 
 * Ruby version
 
+  ```ruby
   2.6.5
-
+  ```
 * System dependencies
 
-* Configuration
+  ```ruby
+  bundle install
+  ```
 
 * Database creation
 
+  ```ruby
+  rails db:create db:migrate
+  ```
+
 * Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+  ```ruby
+  rails db:seed
+  ```
 
 # Install App Locally
 [↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
