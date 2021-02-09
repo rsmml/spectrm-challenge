@@ -53,78 +53,77 @@
     ```
 
     * In order to check the ruby version installed in your machine run:
-        ```ruby
-        ruby -v
-        ```
+      ```ruby
+      ruby -v
+      ```
 
-      If you are running another version of Ruby, we can easily change it with **rbenv**
+    If you are running another version of Ruby, we can easily change it with **rbenv**
 
-      ** rbenv instalation **
-        on the command line run:
+    **rbenv instalation**
 
-          ```
-          brew install rbenv
-          ```
+    on the command line run:
 
-        to check if it worked run:
+    ```ruby
+    brew install rbenv
+    ```
 
-          ```
-          rbenv --version
-          ```
+    to check if it worked run:
 
-      ** Install Ruby **
+    ```ruby
+    rbenv --version
+    ```
 
-      Once rbenv is installed we have to install the Ruby version to be able to run
-      this app localy. Run on the terminal:
+    ** Install Ruby **
 
-      To check Ruby versions available:
-          ```
-          rbenv install --list
-          ```
+    Once rbenv is installed we have to install the Ruby version to be able to run
+    this app localy. Run on the terminal:
 
-        Install Ruby 2.6.5:
-          ```
-          rbenv install 2.6.5
-          ```
-          ```
-          rbenv global 2.6.5
-          ```
+    To check Ruby versions available:
+    ```ruby
+    rbenv install --list
+    ```
 
-        And voilá :confetti_ball: the ruby version we need is installed. You
-        can go back to your preferred Ruby version by doing
-          ```
-          rbenv install RUBY_VERSION
-          ```
-          ```
-          rbenv global RUBY_VERSION
-          ```
+    Install Ruby 2.6.5:
+    ```ruby
+    rbenv install 2.6.5
+    ```
+    ```ruby
+    rbenv global 2.6.5
+    ```
+
+    And voilá :confetti_ball: the ruby version we need is installed. You
+    can go back to your preferred Ruby version by doing
+    ```ruby
+    rbenv install RUBY_VERSION
+    ```
+    ```ruby
+    rbenv global RUBY_VERSION
+    ```
 
   * Make sure you are using the desired Ruby version to install.
-      ```
-      ruby --version
-      ```
+    ```ruby
+    ruby --version
+    ```
 
   * To see if you already have Bundler installed
-     ```
-     bundler --version
-     ```
-
-      or
-
-      ```
-      bundle --version
-      ```
+    ```ruby
+    bundler --version
+    ```
+    or
+    ```ruby
+    bundle --version
+    ```
 
   * This will install the bundler gem in Ruby 2.6.5
-      ```
-      gem install bundler
-      ```
+    ```ruby
+    gem install bundler
+    ```
 
 
   * Don't forget to run
-      ```ruby
-      bundle install
-      ```
+    ```ruby
+    bundle install
+    ```
 
   If this doesn't work, you might need to install another tools or software
   that some of the gems require. Follow the messages and install them.
