@@ -54,7 +54,7 @@ Things you may want to cover:
 
 # ENDPOINTS:
 
-  ## Testing in POSTMAN:
+  ### Testing in POSTMAN:
 
   - **List** all messages:
 
