@@ -68,7 +68,7 @@ This project is built in
   ```ruby
   brew install rbenv
   ```
-  - Install [BREW](https://brew.sh/)** , if you don't have it.
+  - Install **[BREW](https://brew.sh/)**, if you don't have it.
 
   to check if it worked run:
 
