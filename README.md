@@ -124,7 +124,7 @@
   ```ruby
   Message.last.id
   ```
-  You should get a value like this one: fdfd69e2-ed20-4af4-a8e4-ffe7d9036eb7
+  You should get a value like this one (fdfd69e2-ed20-4af4-a8e4-ffe7d9036eb7)[https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier]
   This is the id or identifier of the Message instance.
 
 # Docker
