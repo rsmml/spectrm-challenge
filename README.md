@@ -1,9 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+- [How to install project locally](https://github.com/rsmml/spectrm-challenge#install-app-locally)
+- [Developing app process](https://github.com/rsmml/spectrm-challenge#app-process)
+- [CRUD API Endpoints](https://github.com/rsmml/spectrm-challenge#endpoints)
+- [Docker]()
+- [Test]()
 
 * Ruby version
 
@@ -21,6 +22,8 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
+# Install App Locally
+
 
 # APP PROCESS:
 
@@ -32,22 +35,22 @@ Things you may want to cover:
 
 - **UUID**
 
-  I utilice the class method SecureRandom incorporated in Rails.
+  I utilice the class method **SecureRandom** incorporated in Rails.
   Create migration that enables enable_extension 'pgcrypto'
   Change id column from the table Message to the value of an UUID
   Add a before_create method on Message Class that will apply a uuid string as the id of the class.
 
 - **Charracters - HTML tags - E-mails - Links - Max. Length**
 
-  I create a validation format for the :body with a REGEX that allows it to contain
+  I create a **validation** format for the :body with a REGEX that allows it to contain
   any character from any language, emails and links, exluding HTML tags and a max.
   length of 255 char.
 
 - **Counter**
 
   Set a Counter column on table Message
-  When a Message object is created, Counter == 0
-  Everytime you GET an instance of the Message class, the counter updates to += 1
+  When a Message object is created, **Counter == 0**
+  Everytime you GET an instance of the Message class, the counter updates to **+= 1**
 
 
 
