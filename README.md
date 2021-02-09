@@ -4,8 +4,8 @@
 - [How to install project locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
 - [Developing app process](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#app-process)
 - [CRUD API Endpoints](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#endpoints)
-- [Docker]()
-- [Test]()
+- [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker)
+- [Test](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#testing-app)
 
 # About App:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
@@ -35,6 +35,8 @@
 
 # Install App Locally
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
+
+You can **SKIP** this step if you want to use [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker).
 
 **[GitHub Repo](https://github.com/rsmml/spectrm-challenge)**
 
