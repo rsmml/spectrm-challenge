@@ -70,14 +70,14 @@
   This is a **public workspace** dedicated for this API.
 
 
-  - ### **List** all messages:
+- ### **List** all messages:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   GET     |    http://localhost:3000/api/v1/messages    |    -    |    -    |
 
 
-  - **Retrieve** a Message instance:
+- ### **Retrieve** a Message instance:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
@@ -85,14 +85,14 @@
 
   :identifier =>
 
-  - **Create** a Message instance:
+- ### **Create** a Message instance:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   POST     |    http://localhost:3000/api/v1/messages    |    body    |    TEXT    |
 
 
-  - **Update** a Message instance:
+- ### **Update** a Message instance:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
@@ -100,7 +100,7 @@
 
   :identifier =>
 
-  - **Delete** a Message instance:
+- ### **Delete** a Message instance:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
