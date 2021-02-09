@@ -83,7 +83,7 @@
   |-----------|-----------|-----------|-------------|
   |   GET     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
 
-  :identifier =>
+  :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
 - ### **Create** a Message instance:
 
@@ -98,7 +98,7 @@
   |-----------|-----------|-----------|-------------|
   |   PATCH     |    http://localhost:3000/api/v1/messages:identifier    |    body    |    NEW_TEXT    |
 
-  :identifier =>
+  :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
 - ### **Delete** a Message instance:
 
@@ -106,7 +106,26 @@
   |-----------|-----------|-----------|-------------|
   |   DELETE     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
 
-  :identifier =>
+  :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
+
+- ### **Identifier**
+
+  Because when you install the APP there is no DB we have to run the seed.rb file
+  that will create 50 messages. We will take the last one, and from it, we will
+  take the id or identifier.
+
+  On the console run:
+
+  ```ruby
+  rails c
+  ```
+  Once the irb console is open, run
+
+  ```ruby
+  Message.last.id
+  ```
+  You should get a value like this one: fdfd69e2-ed20-4af4-a8e4-ffe7d9036eb7
+  This is the id or identifier of the Message instance.
 
 # Docker
 [↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
