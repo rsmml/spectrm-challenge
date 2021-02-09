@@ -1,8 +1,8 @@
 # README
 
-- [How to install project locally](https://github.com/rsmml/spectrm-challenge#install-app-locally)
-- [Developing app process](https://github.com/rsmml/spectrm-challenge#app-process)
-- [CRUD API Endpoints](https://github.com/rsmml/spectrm-challenge#endpoints)
+- [How to install project locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
+- [Developing app process](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#app-process)
+- [CRUD API Endpoints](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#endpoints)
 - [Docker]()
 - [Test]()
 
