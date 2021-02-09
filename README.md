@@ -296,7 +296,7 @@ message with a PATCH request
 - And finally, deleting 1 message, first Created with a POST request, then deleted that
 same message with a DELETE request.
 
-In the second part, all validations are tested:
+In the second part **Check Validations**, all validations are tested:
 - A Message instance is created where its UUID should match a REGEX for UUIDs
 - A Message instance is created with different types of characters from all types of languages
 - A Message instance is created with a HTML Tag on its body. It checks that the validation error match with the validation of the model.
@@ -304,3 +304,5 @@ In the second part, all validations are tested:
 - A Message instance is created with an e-mail and a link and it gets a 200 status.
 - A Message instance is created. Then we GET that message and check that is hast a counter not nil, and that its value is 1 due that it's the first time
 that message is retrieved.
+
+![Test](https://lh3.googleusercontent.com/mMXERddt6VGfOFoQ7X_9jo8N96XHKFAEHlh6dRSVN199QBc2pAdY5j0AIaBYsINHMVJTJ4LIjAUeN09gC1xc=w1440-h364)
