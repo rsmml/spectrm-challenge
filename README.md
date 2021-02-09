@@ -56,29 +56,29 @@ Things you may want to cover:
 
   Testing in POSTMAN:
 
-  - List all messages:
+  - **List** all messages:
 
         > GET http://localhost:3000/api/v1/messages
 
-  - Retrieve a Message instance:
+  - **Retrieve** a Message instance:
 
         > GET http://localhost:3000/api/v1/messages/:identifier
 
-  - Create a Message instance:
+  - **Create** a Message instance:
 
         > POST http://localhost:3000/api/v1/messages/?:key=:value
 
           :key   = body
           :value = .text
 
-  - Update a Message instance:
+  - **Update** a Message instance:
 
         > PATCH http://localhost:3000/api/v1/messages/:identifier?:key=:value
 
           :key   = body
           :value = .text
 
-  - Delete a Message instance:
+  - **Delete** a Message instance:
 
         > DELETE http://localhost:3000/api/v1/messages/:identifier
 
