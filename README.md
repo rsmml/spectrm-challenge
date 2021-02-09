@@ -110,8 +110,9 @@
 
 - ### **Identifier**
 
-  Because when you install the APP there is no DB we have to run the seed.rb file
-  that will create 50 messages. We will take the last one, and from it, we will
+  Because when you install the APP there is no DB we have to create one and run the seed.rb file
+  that will create 50 new messages with unknowns id.
+  In order to know one of the identifiers, we will take the last instances of Message created, and from it, we will
   take the id or identifier.
 
   On the console run:
