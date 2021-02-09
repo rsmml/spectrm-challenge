@@ -65,6 +65,11 @@
 
   ### Testing in POSTMAN:
 
+  If you don't have the **Postman** desktop app, please go to this [website](https://www.postman.com/dark-shuttle-75858/workspace/spectrm-challenge/request/create?requestId=e1fabc34-985b-4624-9abb-ef4944462115)
+  Log-in or Sign-up if necessary.
+  This is a **public workspace** dedicated for this API.
+
+
   - **List** all messages:
 
   > GET http://localhost:3000/api/v1/messages
