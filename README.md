@@ -68,6 +68,7 @@ This project is built in
   ```ruby
   brew install rbenv
   ```
+  - Install [BREW](https://brew.sh/)** , if you don't have it.
 
   to check if it worked run:
 
@@ -131,11 +132,43 @@ If this doesn't work, you might need to install another tools or software
 that some of the gems require. Follow the messages and install them.
 Run **bundle** until everything is OK !
 
-* Once everything is Ok! you should be able to start the server:
+
+* **Set up Database**
+
+The following command will create databases based on database.yml ,
+load schema.rb, and seed the data by running seeds.rb.
 
 ```ruby
-rails s --port 3000
+  rails db:setup
 ```
+
+Run `bundle e rails db:migrate` in case there are pending migrations. But I believe
+it won't be necesary.
+
+
+You don't have PostgreSQL, no problem:
+
+  `brew install postgresql`
+
+You can always check before with **postgres -V** if it is installed or not.
+Then run:
+
+```ruby
+brew services start postgresql
+```
+
+* Once everything is Ok! you should be able to start the server.
+
+Run now ```rails s``` and by default, the
+server for the API will be hosted on ```http://localhost:3000```
+
+It shold be running in ```localhost:3000``` to be able to fetch and send data
+from Postman. Run
+
+```ruby
+rails s -p 3000
+```
+in case the default port is not 3000.
 
 # APP PROCESS:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
