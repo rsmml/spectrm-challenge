@@ -36,6 +36,100 @@
 # Install App Locally
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
+**[GitHub Repo](https://github.com/rsmml/spectrm-challenge)**
+
+- You can download the app with the following link:
+  - [Get App Here](https://github.com/rsmml/spectrm-challenge/archive/master.zip)
+
+  - Unzip file.
+  - Open Terminal.
+  - Change Directory to the project folder **spectrm-challenge-master**
+
+  ### Install App:
+
+  This project is built in
+    ```ruby
+    ruby '2.6.5'
+    ```
+
+    * In order to check the ruby version installed in your machine run:
+        ```ruby
+        ruby -v
+        ```
+
+      If you are running another version of Ruby, we can easily change it with **rbenv**
+
+      ** rbenv instalation **
+        on the command line run:
+
+          ```
+          brew install rbenv
+          ```
+
+        to check if it worked run:
+
+          ```
+          rbenv --version
+          ```
+
+      ** Install Ruby **
+
+      Once rbenv is installed we have to install the Ruby version to be able to run
+      this app localy. Run on the terminal:
+
+      To check Ruby versions available:
+          ```
+          rbenv install --list
+          ```
+
+        Install Ruby 2.6.5:
+          ```
+          rbenv install 2.6.5
+          ```
+          ```
+          rbenv global 2.6.5
+          ```
+
+        And voilá :confetti_ball: the ruby version we need is installed. You
+        can go back to your preferred Ruby version by doing
+          ```
+          rbenv install RUBY_VERSION
+          ```
+          ```
+          rbenv global RUBY_VERSION
+          ```
+
+  * Make sure you are using the desired Ruby version to install.
+      ```
+      ruby --version
+      ```
+
+  * To see if you already have Bundler installed
+     ```
+     bundler --version
+     ```
+
+      or
+
+      ```
+      bundle --version
+      ```
+
+  * This will install the bundler gem in Ruby 2.6.5
+      ```
+      gem install bundler
+      ```
+
+
+  * Don't forget to run
+      ```ruby
+      bundle install
+      ```
+
+  If this doesn't work, you might need to install another tools or software
+  that some of the gems require. Follow the messages and install them.
+  Run ** bundle ** until everything is OK !
+
 # APP PROCESS:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
