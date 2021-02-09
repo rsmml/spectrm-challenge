@@ -47,89 +47,95 @@ You can **SKIP** this step if you want to use [Docker](https://github.com/rsmml/
   - Open Terminal.
   - Change Directory to the project folder **spectrm-challenge-master**
 
-  ### Install App:
+### Install App:
 
-  This project is built in
+This project is built in
+  ```ruby
+  ruby '2.6.5'
+  ```
+
+  * In order to check the ruby version installed in your machine run:
     ```ruby
-    ruby '2.6.5'
+    ruby -v
     ```
 
-    * In order to check the ruby version installed in your machine run:
-      ```ruby
-      ruby -v
-      ```
+  If you are running another version of Ruby, we can easily change it with **rbenv**
 
-    If you are running another version of Ruby, we can easily change it with **rbenv**
+  **rbenv instalation**
 
-    **rbenv instalation**
+  on the command line run:
 
-    on the command line run:
+  ```ruby
+  brew install rbenv
+  ```
 
-    ```ruby
-    brew install rbenv
-    ```
+  to check if it worked run:
 
-    to check if it worked run:
+  ```ruby
+  rbenv --version
+  ```
 
-    ```ruby
-    rbenv --version
-    ```
+  ** Install Ruby **
 
-    ** Install Ruby **
+  Once rbenv is installed we have to install the Ruby version to be able to run
+  this app localy. Run on the terminal:
 
-    Once rbenv is installed we have to install the Ruby version to be able to run
-    this app localy. Run on the terminal:
+  To check Ruby versions available:
+  ```ruby
+  rbenv install --list
+  ```
 
-    To check Ruby versions available:
-    ```ruby
-    rbenv install --list
-    ```
+  Install Ruby 2.6.5:
+  ```ruby
+  rbenv install 2.6.5
+  ```
+  ```ruby
+  rbenv global 2.6.5
+  ```
 
-    Install Ruby 2.6.5:
-    ```ruby
-    rbenv install 2.6.5
-    ```
-    ```ruby
-    rbenv global 2.6.5
-    ```
+  And voilá :confetti_ball: the ruby version we need is installed. You
+  can go back to your preferred Ruby version by doing
+  ```ruby
+  rbenv install RUBY_VERSION
+  ```
+  ```ruby
+  rbenv global RUBY_VERSION
+  ```
 
-    And voilá :confetti_ball: the ruby version we need is installed. You
-    can go back to your preferred Ruby version by doing
-    ```ruby
-    rbenv install RUBY_VERSION
-    ```
-    ```ruby
-    rbenv global RUBY_VERSION
-    ```
+* Make sure you are using the desired Ruby version to install.
+  ```ruby
+  ruby --version
+  ```
 
-  * Make sure you are using the desired Ruby version to install.
-    ```ruby
-    ruby --version
-    ```
+* To see if you already have Bundler installed
+  ```ruby
+  bundler --version
+  ```
+  or
+  ```ruby
+  bundle --version
+  ```
 
-  * To see if you already have Bundler installed
-    ```ruby
-    bundler --version
-    ```
-    or
-    ```ruby
-    bundle --version
-    ```
-
-  * This will install the bundler gem in Ruby 2.6.5
-    ```ruby
-    gem install bundler
-    ```
+* This will install the bundler gem in Ruby 2.6.5
+  ```ruby
+  gem install bundler
+  ```
 
 
-  * Don't forget to run
-    ```ruby
-    bundle install
-    ```
+* Don't forget to run
+  ```ruby
+  bundle install
+  ```
 
-  If this doesn't work, you might need to install another tools or software
-  that some of the gems require. Follow the messages and install them.
-  Run ** bundle ** until everything is OK !
+If this doesn't work, you might need to install another tools or software
+that some of the gems require. Follow the messages and install them.
+Run **bundle** until everything is OK !
+
+* Once everything is Ok! you should be able to start the server:
+
+```ruby
+rails s --port 3000
+```
 
 # APP PROCESS:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
@@ -167,9 +173,9 @@ You can **SKIP** this step if you want to use [Docker](https://github.com/rsmml/
 
   ### Testing in POSTMAN:
 
-  If you don't have the **Postman** desktop app, please go to this [website](https://www.postman.com/dark-shuttle-75858/workspace/spectrm-challenge/request/create?requestId=e1fabc34-985b-4624-9abb-ef4944462115)
-  Log-in or Sign-up if necessary.
-  This is a **public workspace** dedicated for this API.
+If you don't have the **Postman** desktop app, please go to this [website](https://www.postman.com/dark-shuttle-75858/workspace/spectrm-challenge/request/create?requestId=e1fabc34-985b-4624-9abb-ef4944462115).
+Log-in or Sign-up if necessary.
+This is a **public workspace** dedicated for this API.
 
 
 - ### **List** all messages:
