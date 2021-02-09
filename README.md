@@ -75,32 +75,38 @@
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   GET     |    http://localhost:3000/api/v1/messages    |    -    |    -    |
-  |-----------|-----------|-----------|-------------|
 
-
-  > GET http://localhost:3000/api/v1/messages
 
   - **Retrieve** a Message instance:
 
-  > GET http://localhost:3000/api/v1/messages/:identifier
+  |   Verb    |    URL    |    Key    |    Value    |
+  |-----------|-----------|-----------|-------------|
+  |   GET     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
+
+  :identifier =>
 
   - **Create** a Message instance:
 
-  > POST http://localhost:3000/api/v1/messages/?:key=:value
+  |   Verb    |    URL    |    Key    |    Value    |
+  |-----------|-----------|-----------|-------------|
+  |   POST     |    http://localhost:3000/api/v1/messages    |    body    |    TEXT    |
 
-      - key   = body
-      - value = TEXT_FIELD
 
   - **Update** a Message instance:
 
-  > PATCH http://localhost:3000/api/v1/messages/:identifier?:key=:value
+  |   Verb    |    URL    |    Key    |    Value    |
+  |-----------|-----------|-----------|-------------|
+  |   PATCH     |    http://localhost:3000/api/v1/messages:identifier    |    body    |    NEW_TEXT    |
 
-      - key   = body
-      - value = NEW_TEXT_FIELD
+  :identifier =>
 
   - **Delete** a Message instance:
 
-  > DELETE http://localhost:3000/api/v1/messages/:identifier
+  |   Verb    |    URL    |    Key    |    Value    |
+  |-----------|-----------|-----------|-------------|
+  |   DELETE     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
+
+  :identifier =>
 
 # Docker
 [↑Go To Top↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
