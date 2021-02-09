@@ -72,6 +72,12 @@
 
   - **List** all messages:
 
+  |   Verb    |    URL    |    Key    |    Value    |
+  |-----------|-----------|-----------|-------------|
+  |   GET     |    http://localhost:3000/api/v1/messages    |    -    |    -    |
+  |-----------|-----------|-----------|-------------|
+
+
   > GET http://localhost:3000/api/v1/messages
 
   - **Retrieve** a Message instance:
