@@ -36,8 +36,6 @@
 # Install App Locally
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
-You can **SKIP** this step if you want to use [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker).
-
 **[GitHub Repo](https://github.com/rsmml/spectrm-challenge)**
 
 - You can download the app with the following link:
@@ -274,6 +272,25 @@ This is a **public workspace** dedicated for this API.
 
 # Docker
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
+
+Theres a branch on the repo called **docker-pg**, created with the purpose of "dockerize"
+the app. Unfortunatelly I could not connect the database with PG.
+
+- You can run:
+
+```ruby
+docker-compose build
+```
+then
+```ruby
+docker-compouse up
+```
+And the app will be runing on localhost:3000. However, when you run
+```ruby
+docker-compose run web rails db:create
+```
+it will return an error when creating the DB.
+
 
 # Testing App
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
