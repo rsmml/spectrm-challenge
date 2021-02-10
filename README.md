@@ -299,13 +299,20 @@ docker-compose build
 ```
 then
 ```ruby
-docker-compouse up
+docker-compose up
 ```
-And the app will be runing on localhost:3000. However, when you run
+And the app will be runing on localhost:3000.
+Now you can run:
+
 ```ruby
-docker-compose run web rails db:create
+docker-compose run web rails db:migrate
 ```
-it will return an error when creating the DB.
+```ruby
+docker-compose run web rails db:seed
+```
+and go to:
+
+[Messages](http://localhost:3000/api/v1/messages)
 
 
 # Testing App
