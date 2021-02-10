@@ -1,1 +1,0 @@
-CREATE USER spectrm_challenge_development SUPERUSER;
