@@ -280,16 +280,9 @@ This is a **public workspace** dedicated for this API.
 
   **HEROKU**
 
-  On the console run:
-
-  ```ruby
-  heroku run rails c
-  ```
-  Once the irb console is open, run
-
-  ```ruby
-  Message.last.id
-  ```
+  "id": "4021b575-485a-4848-b75e-60be5b31b035"
+  "id": "0ce1fed9-4f3b-488b-890f-1a07f4621ca8"
+  "id": "cee782bc-b349-4768-8d39-95468986af5e"
 
   You should get a value like this one [fdfd69e2-ed20-4af4-a8e4-ffe7d9036eb7](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
   This is the id or identifier of the Message instance.
