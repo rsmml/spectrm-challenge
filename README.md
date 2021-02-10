@@ -33,10 +33,12 @@
   rails db:seed
   ```
 
+* Heroku
+
+  [Spectrm Challenge](https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages)
+
 # Install App Locally
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
-
-You can **SKIP** this step if you want to use [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker).
 
 **[GitHub Repo](https://github.com/rsmml/spectrm-challenge)**
 
@@ -219,13 +221,14 @@ This is a **public workspace** dedicated for this API.
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   GET     |    http://localhost:3000/api/v1/messages    |    -    |    -    |
-
+  |   GET     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages    |    -    |    -    |
 
 - ### **Retrieve** a Message instance:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   GET     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
+  |   GET     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/4021b575-485a-4848-b75e-60be5b31b035    |    -    |    -    |
 
   :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
@@ -234,13 +237,15 @@ This is a **public workspace** dedicated for this API.
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   POST     |    http://localhost:3000/api/v1/messages    |    body    |    TEXT    |
+  |   POST     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages   |    body    |    TEXT    |
 
 
 - ### **Update** a Message instance:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
-  |   PATCH     |    http://localhost:3000/api/v1/messages:identifier    |    body    |    NEW_TEXT    |
+  |   PATCH     |    http://localhost:3000/api/v1/messages/:identifier    |    body    |    NEW_TEXT    |
+  |   PATCH     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/4021b575-485a-4848-b75e-60be5b31b035    |    body    |    NEW_TEXT    |
 
   :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
@@ -249,10 +254,13 @@ This is a **public workspace** dedicated for this API.
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   DELETE     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
+  |   DELETE     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/4021b575-485a-4848-b75e-60be5b31b035    |    -    |    -    |
 
   :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
 - ### **Identifier**
+
+  **LOCALLY**
 
   Because when you install the APP there is no DB we have to create one and run the seed.rb file
   that will create 50 new messages with unknowns id.
@@ -272,8 +280,33 @@ This is a **public workspace** dedicated for this API.
   You should get a value like this one [fdfd69e2-ed20-4af4-a8e4-ffe7d9036eb7](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
   This is the id or identifier of the Message instance.
 
+  **HEROKU**
+
+  - "id": "4021b575-485a-4848-b75e-60be5b31b035"
+  - "id": "0ce1fed9-4f3b-488b-890f-1a07f4621ca8"
+  - "id": "cee782bc-b349-4768-8d39-95468986af5e"
+
 # Docker
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
+
+Theres a branch on the repo called **docker-pg**, created with the purpose of "dockerize"
+the app. Unfortunatelly I could not connect the database with PG.
+
+- You can run:
+
+```ruby
+docker-compose build
+```
+then
+```ruby
+docker-compouse up
+```
+And the app will be runing on localhost:3000. However, when you run
+```ruby
+docker-compose run web rails db:create
+```
+it will return an error when creating the DB.
+
 
 # Testing App
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
