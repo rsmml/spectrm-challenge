@@ -228,7 +228,7 @@ This is a **public workspace** dedicated for this API.
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   GET     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
-  |   GET     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/:identifier    |    -    |    -    |
+  |   GET     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/4021b575-485a-4848-b75e-60be5b31b035    |    -    |    -    |
 
   :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
@@ -245,7 +245,7 @@ This is a **public workspace** dedicated for this API.
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   PATCH     |    http://localhost:3000/api/v1/messages/:identifier    |    body    |    NEW_TEXT    |
-  |   PATCH     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/:identifier    |    body    |    NEW_TEXT    |
+  |   PATCH     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/4021b575-485a-4848-b75e-60be5b31b035    |    body    |    NEW_TEXT    |
 
   :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
@@ -254,7 +254,7 @@ This is a **public workspace** dedicated for this API.
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   DELETE     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
-  |   DELETE     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/:identifier    |    -    |    -    |
+  |   DELETE     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/4021b575-485a-4848-b75e-60be5b31b035    |    -    |    -    |
 
   :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
