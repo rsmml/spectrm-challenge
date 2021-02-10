@@ -10,6 +10,13 @@ services:
   database:
     # Use the postgres 11.5 base image for this container.
     image: postgres:13.1
+    environment:
+      POSTGRES_DB: spectrm_challenge_development
+      POSTGRES_USER: spectrm_challenge_development
+      POSTGRES_PASSWORD: "testm3!"
+
+    ports:
+      - "5432:5432"
 
     volumes:
       # We need to tell Docker where on the PostgreSQL
@@ -33,7 +40,7 @@ services:
       #
       # The init.sql file is a one-line that creates a
       # user called (arbitrarily) boats_development.
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      # - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
   web:
     # The root directory from which we're building.
@@ -64,9 +71,11 @@ services:
       RAILS_ENV: development
       DATABASE_NAME: spectrm_challenge_development
       DATABASE_USER: spectrm_challenge_development
-      DATABASE_PASSWORD:
+      DATABASE_PASSWORD: "testm3!"
       DATABASE_HOST: database
 
 # Declare the volumes that our application uses.
 volumes:
   db_data:
+
+

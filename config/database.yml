@@ -19,7 +19,7 @@ default: &default
   encoding: unicode
   database: spectrm_challenge_development
   username: spectrm_challenge_development
-  password:
+  password: "testm3!"
   port: 5432
   host: database
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

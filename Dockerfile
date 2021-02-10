@@ -12,8 +12,7 @@ WORKDIR /code
 COPY . /code
 
 # Run bundle install to install the Ruby dependencies.
-RUN gem install bundler
-RUN bundle install
+RUN gem install bundler && bundle install
 
 # Set "rails server -b 0.0.0.0" as the command to
 # run when this container starts.
