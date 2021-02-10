@@ -1,1 +1,1 @@
-CREATE USER boats_development SUPERUSER;
+CREATE USER spectrm_challenge_development SUPERUSER;

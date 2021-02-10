@@ -17,11 +17,11 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV['DATABASE_NAME'] %>
-  username: <%= ENV['DATABASE_USER'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  database: spectrm_challenge_development
+  username: spectrm_challenge_development
+  password:
   port: 5432
-  host: <%= ENV['DATABASE_HOST'] %>
+  host: database
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
