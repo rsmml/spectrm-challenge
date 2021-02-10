@@ -17,9 +17,13 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  database: spectrm_challenge_development
+  username: spectrm_challenge_development
+  password: "testm3!"
+  port: 5432
+  host: database
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
 development:
   <<: *default
@@ -80,6 +84,7 @@ test:
 #
 production:
   <<: *default
+  host: <%= ENV.fetch("DATABASE_HOST") { "heroku" } %>
   database: spectrm_challenge_production
   username: spectrm_challenge
   password: <%= ENV['SPECTRM_CHALLENGE_DATABASE_PASSWORD'] %>
