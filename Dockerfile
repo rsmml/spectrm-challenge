@@ -1,40 +1,27 @@
+# Use the Ruby 2.7.1 image from Docker Hub
+# as the base image (https://hub.docker.com/_/ruby)
 FROM ruby:2.6.5
 
-ENV APP_PATH /var/APP_PATH
-ENV BUNDLE_VERSION 2.2.4
-ENV BUNDLE_PATH /usr/local/bundle/gems
-ENV TMP_PATH /tpm/
-ENV RAILS_LOG_TO_STDOUT true
-ENV RAILS_PORT 3000
+# Use a directory called /code in which to store
+# this application's files. (The directory name
+# is arbitrary and could have been anything.)
+WORKDIR /code
 
-COPY ./dev-docker-entrypoint.sh /usr/local/bin/dev-entrypoint.sh
-COPY ./test-docker-entrypoint/sh /usr/local/bin/test-docker-entrypoint.sh
+# Copy all the application's files into the /code
+# directory.
+COPY . /code
 
-RUN chmod +x /usr/local/bin/dev-entrypoint.sh && chmod +x /usr/local/bin/test-entrypoint.sh
+# Run bundle install to install the Ruby dependencies.
+RUN bundle install
 
-# install dependencies for application
-RUN apk -U add --no-cache \
-build-base \
-git \
-postgresql-dev \
-postgresql-client \
-libxml2-dev \
-libxslt-dev \
-nodejs \
-yarn \
-imagemagick \
-tzdata \
-less \
-&& rm -rf /var/cache/apk/* \
-&& mkdir -p $APP_PATH
+# Install Yarn.
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN apt-get update && apt-get install -y yarn
 
+# Run yarn install to install JavaScript dependencies.
+RUN yarn install --check-files
 
-RUN gem install bundler --version "$BUNDLE_VERSION" \
-&& rm -rf $GEM_HOME/cache/*
-
-# navigate to app directory
-WORKDIR $APP_PATH
-
-EXPOSE $RAILS_PORT
-
-ENTRYPOINT [ "bundle", "exec" ]
+# Set "rails server -b 0.0.0.0" as the command to
+# run when this container starts.
+CMD ["rails", "server", "-b", "0.0.0.0"]
