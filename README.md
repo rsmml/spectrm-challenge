@@ -33,6 +33,12 @@
   rails db:seed
   ```
 
+* Heroku
+
+  ```ruby
+  https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages
+  ```
+
 # Install App Locally
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
