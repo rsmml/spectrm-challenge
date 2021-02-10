@@ -221,13 +221,14 @@ This is a **public workspace** dedicated for this API.
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   GET     |    http://localhost:3000/api/v1/messages    |    -    |    -    |
-
+  |   GET     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages    |    -    |    -    |
 
 - ### **Retrieve** a Message instance:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   GET     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
+  |   GET     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/:identifier    |    -    |    -    |
 
   :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
@@ -236,13 +237,15 @@ This is a **public workspace** dedicated for this API.
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   POST     |    http://localhost:3000/api/v1/messages    |    body    |    TEXT    |
+  |   POST     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages   |    body    |    TEXT    |
 
 
 - ### **Update** a Message instance:
 
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
-  |   PATCH     |    http://localhost:3000/api/v1/messages:identifier    |    body    |    NEW_TEXT    |
+  |   PATCH     |    http://localhost:3000/api/v1/messages/:identifier    |    body    |    NEW_TEXT    |
+  |   PATCH     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/:identifier    |    body    |    NEW_TEXT    |
 
   :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
@@ -251,10 +254,13 @@ This is a **public workspace** dedicated for this API.
   |   Verb    |    URL    |    Key    |    Value    |
   |-----------|-----------|-----------|-------------|
   |   DELETE     |    http://localhost:3000/api/v1/messages/:identifier    |    -    |    -    |
+  |   DELETE     |    https://spectrm-challenge-rsmml.herokuapp.com/api/v1/messages/:identifier    |    -    |    -    |
 
   :identifier => [Get Identifier](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
 
 - ### **Identifier**
+
+  **LOCALLY**
 
   Because when you install the APP there is no DB we have to create one and run the seed.rb file
   that will create 50 new messages with unknowns id.
@@ -271,6 +277,20 @@ This is a **public workspace** dedicated for this API.
   ```ruby
   Message.last.id
   ```
+
+  **HEROKU**
+
+  On the console run:
+
+  ```ruby
+  heroku run rails c
+  ```
+  Once the irb console is open, run
+
+  ```ruby
+  Message.last.id
+  ```
+
   You should get a value like this one [fdfd69e2-ed20-4af4-a8e4-ffe7d9036eb7](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
   This is the id or identifier of the Message instance.
 
