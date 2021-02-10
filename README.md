@@ -289,20 +289,27 @@ This is a **public workspace** dedicated for this API.
 # Docker
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
-Theres a branch on the repo called **docker-pg**, created with the purpose of "dockerize"
-the app. Unfortunatelly I could not connect the database with PG.
+Once you have the project folder, 'cd' to the directory of the **spectrm-challenge** and run the following commands:
 
-- You can run:
-
-```ruby
-docker-compose build
-```
-then
 ```ruby
 docker-compose up
 ```
-And the app will be runing on localhost:3000.
-Now you can run:
+This will run the docker-compose.yml file, that will build the App. If there's an error, please run
+
+
+```ruby
+docker-compose down
+```
+```ruby
+docker-compose build
+```
+(If theres a FATAL error from PostgreSQL, run ```brew services stop posgres```, and start again the container)
+
+One last time, run again ```docker-compose up```
+
+This should be fine :ok_hand: Now the app is running in **localhost:3000**
+
+Now we should migrate our DB with:
 
 ```ruby
 docker-compose run web rails db:migrate
@@ -310,9 +317,10 @@ docker-compose run web rails db:migrate
 ```ruby
 docker-compose run web rails db:seed
 ```
-and go to:
 
-[Messages](http://localhost:3000/api/v1/messages)
+Done! Now to check that everything works, go to:
+
+[localhost:3000](http://localhost:3000/api/v1/messages)
 
 
 # Testing App
@@ -323,9 +331,17 @@ conditions.
 
 **How to test app:**
 On the terminal (in the directory of the project) run:
+- Locally
 ```ruby
 rspec
 ```
+
+- Docker:
+
+```ruby
+docker-compose run web rspec
+```
+
 You should be able to see 2 types of tests. The first one, **Messages API** will verify
 all the basic CRUD actions.
 - Creating 10 messages and GET all of them with a :success status.
