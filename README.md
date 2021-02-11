@@ -330,8 +330,7 @@ docker-compose build
 
 One last time, run again ```docker-compose up```
 
-This should be fine :ok_hand: Now the app is running in **localhost:3000** :confetti:
-![docker](https://lh3.googleusercontent.com/fife/ABSRlIpY4tXd77iBXRnrSwB8F66_48wmcgVxZz_tWmnjllA_YzaZc2pM7MkXpMShtZW4HHB1or-V1ttstaIxC7Z-vEFb3dMwxM0CgbvQJJXg7lst3gYERJ3N3RHtsl7aM03UbVWCmxqHPHCpHF2ww8rL655eC6fMH35WrA2vCtbnwVudtuuSK_0vsidPvDt32KDVOb1wUTnAltajFcAVdFrszP4YSOHnbw9mq8JVAvnAM74u3xpe0fWK5EUEWwg6424UqpOUkMLi-lQPz6agcZbZzvXtfpRXbdUye_ZxVtbo3gN7wyMvZGPh0t03j2eX9mt_5BBlJCGhKHCh_eT4O8-j8R0uVECvJzYYmd6x8rGuhcVdvo7mf9HqLN1w7e6nPo3gMACEq4TwMYFCaVt2VAhGFdDOpaG6sdAG7OgzcIeYjOVEwwrD37KkogWwdfedazSLdPridwtdxhrdSUjHxeT5DuUvtNarhEor2_pbqx1zTOqu5mEDr7V3E7YDJgr4ROTCk38vvd_izXBw90WAyV19jHipa1Dw8i0iIYvzE97coSz5Ro-c-4QmSM8c5lvKMAU09SXOXeeRU4gkwzzvG1ZjtT1HVXOP5xb8AFJxpZI8h53anBYPyja2K1mqso7d7cGAkja16N20uu9h-le-bXRE8jwAQtGbGC-XV4RxysQHzC2DNH8hCdwGGAjdyF2iakHGnW_K584weqmCsjbvbMhfi6eipjzxbHozNQ=w1440-h719-ft)
+This should be fine :ok_hand: Now the app is running in **localhost:3000** :tada:
 
 Now we should migrate our DB with, open another tab on the terminal and run:
 
