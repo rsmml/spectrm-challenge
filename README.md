@@ -365,19 +365,19 @@ docker-compose run web rspec
 
 You should be able to see 2 types of tests. The first one, **Messages API** will verify
 all the basic CRUD actions.
-- Creating 10 messages and GET all of them with a :success status.
-- Creating 1 message and GET it with a :success status.
-- Creating 1 message with a POST request.
-- Updating 1 message, first Created with a POST request, then updating the same
-message with a PATCH request
-- And finally, deleting 1 message, first Created with a POST request, then deleted that
-same message with a DELETE request.
+- Creating 10 messages and ```GET``` all of them with a ```:success``` status.
+- Creating 1 message and ```GET``` it with a ```:success``` status.
+- Creating 1 message with a ```POST``` request.
+- Updating 1 message, first Created with a ```POST``` request, then updating the same
+message with a ```PATCH``` request
+- And finally, deleting 1 message, first Created with a ```POST``` request, then deleted that
+same message with a ```DELETE``` request.
 
 In the second part **Check Validations**, all validations are tested:
-- A Message instance is created where its UUID should match a REGEX for UUIDs
-- A Message instance is created with different types of characters from all types of languages
-- A Message instance is created with a HTML Tag on its body. It checks that the validation error match with the validation of the model.
-- A Message instance is created with more that 255 characters. It checks that the validation error match with the validation of the model.
-- A Message instance is created with an e-mail and a link and it gets a 200 status.
-- A Message instance is created. Then we GET that message and check that is hast a counter not nil, and that its value is 1 due that it's the first time
+- A Message instance is created where its ```UUID``` should match a REGEX for UUIDs
+- A Message instance is created with different types of characters from ```all types of languages```
+- A Message instance is created with a ```HTML Tag``` on its body. It checks that the validation error match with the validation of the model.
+- A Message instance is created with more that ```255 characters```. It checks that the validation error match with the validation of the model.
+- A Message instance is created with an ```e-mail``` and a ```link``` and it gets a 200 status.
+- A Message instance is created. Then we GET that message and check that is hast a ```counter``` not nil, and that its value is 1 due that it's the first time
 that message is retrieved.
