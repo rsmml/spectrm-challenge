@@ -1,4 +1,4 @@
-# README
+# README - SPECTRM-CHALLENGE
 
 - [About App](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#about-app)
 - [How to install project locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
@@ -24,13 +24,13 @@
 * Database creation
 
   ```ruby
-  rails db:create db:migrate
+  rails db:create db:migrate db:seed
   ```
 
-* Database initialization
+* Server initialization
 
   ```ruby
-  rails db:seed
+  rails s
   ```
 
 * Heroku
@@ -43,7 +43,7 @@
 **[GitHub Repo](https://github.com/rsmml/spectrm-challenge)**
 
 - Clone the repo with this command:
-(Go to a directory where you will like to put the project, like ```~ cd /Desktop/``` )
+(Go to a directory where you will like to put this project, like for example ```~ && cd Desktop/``` )
 ```ruby
 git clone git@github.com:rsmml/spectrm-challenge.git spectrm-challenge-rodrigo-sommacal
 ```
@@ -52,16 +52,16 @@ cd spectrm-challenge-rodrigo-sommacal
 ```
 You will get the repo with a ```docker-compose``` branch.
 To check branches run ```git branch -a```. The master branch is created with the intention
-to run the app locally, without docker and docker-compose.
+to run the app locally, without Docker and docker-compose.
 If you want to skip the [app instalation locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
 go straigh to the [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker-whale) section.
 
 
-- Or uou can download the app with the following link:
+- You can also download the app with the following link:
   - [Get App Here](https://github.com/rsmml/spectrm-challenge/archive/master.zip)
 
   - Unzip file.
-  - Open Terminal.
+  - Open Console.
   - Change Directory to the project folder **spectrm-challenge-master**
 
 ### Install App:
@@ -304,7 +304,7 @@ This is a **public workspace** dedicated for this API.
 # Docker :whale:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
-In order to be able to run Docker and docker-compose.yml please switch to the ```docker-comopse``` branch with:
+In order to be able to run Docker and docker-compose.yml please switch to the ```docker-compose``` branch with:
 - Check Branches
 ```ruby
 git branch -a
