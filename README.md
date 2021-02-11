@@ -4,7 +4,7 @@
 - [How to install project locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
 - [Developing app process](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#app-process)
 - [CRUD API Endpoints](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#endpoints)
-- [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker)
+- [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker-whale)
 - [Test](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#testing-app)
 
 # About App:
@@ -54,7 +54,7 @@ You will get the repo with a ```docker-compose``` branch.
 To check branches run ```git branch -a```. The master branch is created with the intention
 to run the app locally, without docker and docker-compose.
 If you want to skip the [app instalation locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
-go straigh to the [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker) section.
+go straigh to the [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker-whale) section.
 
 
 - Or uou can download the app with the following link:
