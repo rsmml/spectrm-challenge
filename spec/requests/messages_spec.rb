@@ -11,7 +11,7 @@ describe 'Messages API', type: :request do
     end
     get '/api/v1/messages'
     expect(response).to have_http_status(:success)
-    expect(JSON.parse(response.body)["messages"].size).to eq(60)
+    expect(JSON.parse(response.body)["messages"].size).to eq(10)
   end
 
   it 'GET one instance of Message' do

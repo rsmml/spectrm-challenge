@@ -17,21 +17,11 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: spectrm_challenge_development
-  username: spectrm_challenge_development
-  password: "testm3!"
-  port: 5432
-  host: database
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
 
 development:
   <<: *default
   database: spectrm_challenge_development
-  username: spectrm_challenge_development
-  password: "testm3!"
-  host: localhost
-  port: 5432
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -87,7 +77,6 @@ test:
 #
 production:
   <<: *default
-  host: <%= ENV.fetch("DATABASE_HOST") { "heroku" } %>
   database: spectrm_challenge_production
   username: spectrm_challenge
   password: <%= ENV['SPECTRM_CHALLENGE_DATABASE_PASSWORD'] %>
