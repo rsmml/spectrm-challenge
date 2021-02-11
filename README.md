@@ -1,7 +1,7 @@
 # README
 
 - [About App](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#about-app)
-- [How to install project locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
+- [How to install the project locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
 - [Developing app process](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#app-process)
 - [CRUD API Endpoints](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#endpoints)
 - [Docker :whale:](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker-whale)
@@ -53,8 +53,8 @@ cd spectrm-challenge-rodrigo-sommacal
 You will get the repo with a ```docker-compose``` branch.
 To check branches run ```git branch -a```. The master branch is created with the intention
 to run the app locally, without Docker and docker-compose.
-If you want to skip the [app instalation locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
-go straigh to the [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker-whale) section.
+If you want to skip the [app installation locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
+go straight to the [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker-whale) section.
 
 
 - You can also download the app with the following link:
@@ -78,7 +78,7 @@ This project is built in
 
   If you are running another version of Ruby, we can easily change it with **rbenv**
 
-  **rbenv Instalation:**
+  **rbenv Installation:**
 
   on the command line run:
 
@@ -97,7 +97,7 @@ This project is built in
   **Install Ruby**
 
   Once rbenv is installed we have to install the Ruby version to be able to run
-  this app localy. Run on the terminal:
+  this app locally. Run, on the terminal:
 
   To check Ruby versions available:
   ```ruby
@@ -146,14 +146,14 @@ This project is built in
   bundle install
   ```
 
-If this doesn't work, you might need to install another tools or software
+If this doesn't work, you might need to install other tools or software
 that some of the gems require. Follow the messages and install them.
-Run **bundle** until everything is OK !
+Run **bundle** until everything is OK!
 
 
 * **Set up Database**
 
-The following command will create databases based on database.yml ,
+The following command will create databases based on database.yml,
 load schema.rb, and seed the data by running seeds.rb.
 
 ```ruby
@@ -161,7 +161,7 @@ load schema.rb, and seed the data by running seeds.rb.
 ```
 
 Run ```bundle install``` & ```rails db:migrate``` in case there are pending migrations. But I believe
-it won't be necesary.
+it won't be necessary.
 
 
 You don't have PostgreSQL, no problem:
@@ -182,7 +182,7 @@ brew services start postgresql
 Run now ```rails s``` and by default, the
 server for the API will be hosted on ```http://localhost:3000```
 
-It shold be running in ```localhost:3000``` to be able to fetch and send data
+It should be running in ```localhost:3000``` to be able to fetch and send data
 from Postman. Run
 
 ```ruby
@@ -193,7 +193,7 @@ in case the default port is not 3000.
 # APP PROCESS:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
-- Create of a new rails app, API only, with postgreSQL for DB.
+- I created a new rails app, API only, with postgreSQL for DB.
 
   ```ruby
   rails new spectrm-challenge --database postgresql --api
@@ -201,21 +201,21 @@ in case the default port is not 3000.
 
 - **UUID**
 
-  I utilice the class method **SecureRandom** incorporated in Rails.
+  I utilised the class method **SecureRandom** incorporated in Rails.
   Create migration that enables enable_extension 'pgcrypto'
-  Change id column from the table Message to the value of an UUID
+  Change id column from the table Message to the value of a UUID
   Add a before_create method on Message Class that will apply a uuid string as the id of the class.
 
 - **Charracters - HTML tags - E-mails - Links - Max. Length**
 
   I create a **validation** format for the :body with a REGEX that allows it to contain
-  any character from any language, emails and links, exluding HTML tags and a max.
+  any character from any language, emails, links, exluding HTML tags, and a max.
   length of 255 char.
 
 - **Counter**
 
   Set a Counter column on table Message
-  When a Message object is created, **Counter == 0**
+  When a Message object is created, **Counter == 0**.
   Everytime you GET an instance of the Message class, the counter updates to **+= 1**
 
 
@@ -228,7 +228,7 @@ in case the default port is not 3000.
 
 If you don't have the **Postman** desktop app, please go to this [website](https://www.postman.com/dark-shuttle-75858/workspace/spectrm-challenge/request/create?requestId=e1fabc34-985b-4624-9abb-ef4944462115).
 Log-in or Sign-up if necessary.
-This is a **public workspace** dedicated for this API.
+This is a **public workspace** dedicated to this API.
 
 
 - ### **List** all messages:
@@ -279,7 +279,7 @@ This is a **public workspace** dedicated for this API.
 
   Because when you install the APP there is no DB we have to create one and run the seed.rb file
   that will create 50 new messages with unknowns id.
-  In order to know one of the identifiers, we will take the last instances of Message created, and from it, we will
+  In order to know one of the identifiers, we will take the last instances of the Message created, and from it, we will
   take the id or identifier.
 
   On the console run:
@@ -317,7 +317,7 @@ git co remotes/origin/docker-compose
 ```ruby
 docker-compose up
 ```
-This will run the docker-compose.yml file, that will build the App and start the localhost:3000. If there's an error, please run
+This will run the docker-compose.yml file, which will build the App and start the localhost:3000. If there's an error, please run
 
 ```ruby
 docker-compose down
@@ -325,7 +325,7 @@ docker-compose down
 ```ruby
 docker-compose build
 ```
-(If theres a FATAL error from PostgreSQL, run ```brew services stop posgres```, and start again the container. If theres a
+(If theres a FATAL error from PostgreSQL, run ```brew services stop postgres```, and start again the container. If theres a
 ```Traceback (most recent call last):[...]``` error, you might need to start your Docker :whale: desktop.)
 
 One last time, run again ```docker-compose up```
@@ -347,7 +347,7 @@ Done! Now to check that everything works, go to:
 # Testing App
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
-I created a series of test to verify that all messages created are done under the right
+I created a series of tests to verify that all messages created are done under the right
 conditions.
 
 **How to test app:**
@@ -376,8 +376,8 @@ same message with a ```DELETE``` request.
 In the second part **Check Validations**, all validations are tested:
 - A Message instance is created where its ```UUID``` should match a REGEX for UUIDs
 - A Message instance is created with different types of characters from ```all types of languages```
-- A Message instance is created with a ```HTML Tag``` on its body. It checks that the validation error match with the validation of the model.
-- A Message instance is created with more that ```255 characters```. It checks that the validation error match with the validation of the model.
+- A Message instance is created with an ```HTML Tag``` on its body. It checks that the validation error matches the validation of the model.
+- A Message instance is created with more than ```255 characters```. It checks that the validation error matches the validation of the model.
 - A Message instance is created with an ```e-mail``` and a ```link``` and it gets a 200 status.
-- A Message instance is created. Then we GET that message and check that is hast a ```counter``` not nil, and that its value is 1 due that it's the first time
+- A Message instance is created. Then we GET that message and check that it has a ```counter``` not nil and to that its value is 1 due that it's the first time
 that message is retrieved.
