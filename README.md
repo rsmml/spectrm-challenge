@@ -330,8 +330,8 @@ docker-compose build
 
 One last time, run again ```docker-compose up```
 
-This should be fine :ok_hand: Now the app is running in **localhost:3000** :confeti:
-![docker](https://prnt.sc/z2w7g9)
+This should be fine :ok_hand: Now the app is running in **localhost:3000** :confetti:
+![docker](https://lh3.google.com/u/0/d/1QeMzw0DDLd-C-qAweO7KrSn_5H57BcLE=w1440-h719-iv1)
 
 Now we should migrate our DB with, open another tab on the terminal and run:
 
