@@ -318,14 +318,8 @@ git co remotes/origin/docker-compose
 docker-compose up
 ```
 This will run the docker-compose.yml file, that will build the App and start the localhost:3000. If there's an error, please run
-
-```ruby
-docker-compose down
-```
-```ruby
-docker-compose build
-```
-(If theres a FATAL error from PostgreSQL, run ```brew services stop posgres```, and start again the container. If theres a
+```docker-compose down``` and ```docker-compose build```, this should fix the problem.
+(If there's a FATAL error from PostgreSQL, run ```brew services stop posgres```, and start again the container. If there's a
 ```Traceback (most recent call last):[...]``` error, you might need to start your Docker :whale: desktop.)
 
 One last time, run again ```docker-compose up```
