@@ -326,11 +326,12 @@ docker-compose down
 docker-compose build
 ```
 (If theres a FATAL error from PostgreSQL, run ```brew services stop posgres```, and start again the container. If theres a
-Traceback (most recent call last):[...] error, you might need to start your Docker :whale: desktop.)
+```Traceback (most recent call last):[...]``` error, you might need to start your Docker :whale: desktop.)
 
 One last time, run again ```docker-compose up```
 
-This should be fine :ok_hand: Now the app is running in **localhost:3000**
+This should be fine :ok_hand: Now the app is running in **localhost:3000** :confeti:
+![docker](https://prnt.sc/z2w7g9)
 
 Now we should migrate our DB with, open another tab on the terminal and run:
 
