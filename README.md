@@ -42,7 +42,22 @@
 
 **[GitHub Repo](https://github.com/rsmml/spectrm-challenge)**
 
-- You can download the app with the following link:
+- Clone the repo with this command:
+(Go to a directory where you will like to put the project, like ```~ cd /Desktop/``` )
+```ruby
+git clone git@github.com:rsmml/spectrm-challenge.git spectrm-challenge-rodrigo-sommacal
+```
+```ruby
+cd spectrm-challenge-rodrigo-sommacal
+```
+You will get the repo with a ```docker-compose``` branch.
+To check branches run ```git branch -a```. The master branch is created with the intention
+to run the app locally, without docker and docker-compose.
+If you want to skip the [app instalation locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
+go straigh to the [Docker](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker) section.
+
+
+- Or uou can download the app with the following link:
   - [Get App Here](https://github.com/rsmml/spectrm-challenge/archive/master.zip)
 
   - Unzip file.
@@ -286,16 +301,23 @@ This is a **public workspace** dedicated for this API.
   - "id": "0ce1fed9-4f3b-488b-890f-1a07f4621ca8"
   - "id": "cee782bc-b349-4768-8d39-95468986af5e"
 
-# Docker
+# Docker :docker:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
-Once you have the project folder, 'cd' to the directory of the **spectrm-challenge** and run the following commands:
-
+In order to be able to run Docker and docker-compose.yml please switch to the ```docker-comopse``` branch with:
+- Check Branches
+```ruby
+git branch -a
+```
+- Switch branch:
+```ruby
+git co remotes/origin/docker-compose
+```
+- Start container
 ```ruby
 docker-compose up
 ```
-This will run the docker-compose.yml file, that will build the App. If there's an error, please run
-
+This will run the docker-compose.yml file, that will build the App and start the localhost:3000. If there's an error, please run
 
 ```ruby
 docker-compose down
@@ -309,14 +331,12 @@ One last time, run again ```docker-compose up```
 
 This should be fine :ok_hand: Now the app is running in **localhost:3000**
 
-Now we should migrate our DB with:
+Now we should migrate our DB with, open another tab on the terminal and run:
 
 ```ruby
-docker-compose run web rails db:migrate
+docker-compose run web rails db:migrate db:seed
 ```
-```ruby
-docker-compose run web rails db:seed
-```
+This will start our DB and put some nice messages on it :smiley:
 
 Done! Now to check that everything works, go to:
 
