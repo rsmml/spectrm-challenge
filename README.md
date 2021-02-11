@@ -1,4 +1,4 @@
-# README - SPECTRM-CHALLENGE
+# README
 
 - [About App](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#about-app)
 - [How to install project locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
