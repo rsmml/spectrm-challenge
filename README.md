@@ -301,7 +301,7 @@ This is a **public workspace** dedicated for this API.
   - "id": "0ce1fed9-4f3b-488b-890f-1a07f4621ca8"
   - "id": "cee782bc-b349-4768-8d39-95468986af5e"
 
-# Docker :docker:
+# Docker :whale:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
 
 In order to be able to run Docker and docker-compose.yml please switch to the ```docker-comopse``` branch with:
