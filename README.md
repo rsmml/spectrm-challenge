@@ -325,7 +325,8 @@ docker-compose down
 ```ruby
 docker-compose build
 ```
-(If theres a FATAL error from PostgreSQL, run ```brew services stop posgres```, and start again the container)
+(If theres a FATAL error from PostgreSQL, run ```brew services stop posgres```, and start again the container. If theres a
+Traceback (most recent call last):[...] error, you might need to start your Docker :whale: desktop.)
 
 One last time, run again ```docker-compose up```
 
