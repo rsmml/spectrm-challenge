@@ -295,6 +295,22 @@ This is a **public workspace** dedicated to this API.
   You should get a value like this one [fdfd69e2-ed20-4af4-a8e4-ffe7d9036eb7](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
   This is the id or identifier of the Message instance.
 
+  **DOCKER**:whale:
+
+  While the container is running in localhost, run:
+
+  ```ruby
+  docker-compose run web rails c
+  ```
+
+  This will brings you to the irb console of the app. Then just run the following command to get an UUID:
+
+  ```ruby
+  Message.last.id
+  ```
+  You should get a value like this one [fdfd69e2-ed20-4af4-a8e4-ffe7d9036eb7](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#identifier)
+  This is the id or identifier of the Message instance.
+
   **HEROKU**
 
   - "id": "4021b575-485a-4848-b75e-60be5b31b035"
