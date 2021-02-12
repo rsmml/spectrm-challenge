@@ -1,11 +1,11 @@
 # README
 
 - [About App](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#about-app)
-- [How to install the project locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
-- [Developing app process](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#app-process)
-- [CRUD API Endpoints](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#endpoints)
+- [Install API Locally](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#install-app-locally)
+- [Developing API process - How the API was built?](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#app-process)
+- [App Usage - CRUD API Endpoints](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#endpoints)
 - [Docker :whale:](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#docker-whale)
-- [Test](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#testing-app)
+- [Tests](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#testing-app)
 
 # About App:
 [↑ Go To Top ↑](https://github.com/rsmml/spectrm-challenge/blob/master/README.md#readme)
